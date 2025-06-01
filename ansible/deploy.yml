@@ -5,9 +5,9 @@
   tasks:
   - name: Copy Warfile to Tomcat
     copy:
-    src: "/var/snap/jenkins/4865/workspace/MyMavenWebApp2/target/MyMavenWebApp2.war"
-    dest: "/opt/tomcat/webapps/MyMavenWebApp2.war"
-    remote_src: no
+      src: "/var/snap/jenkins/4865/workspace/MyMavenWebApp2/target/MyMavenWebApp2.war"
+      dest: "/opt/tomcat/webapps/MyMavenWebApp2.war"
+      remote_src: no
   - name: Restart Tomcat
     systemd:
       name: tomcat
